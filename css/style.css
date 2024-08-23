@@ -19,12 +19,15 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: url("../img/Ensitech.jpeg") left/cover no-repeat;
     height: 100vh;
+<<<<<<< HEAD
 
 
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
     padding: 20px;
+=======
+>>>>>>> 1b20716686f41a2f06b9e39843a102b09fd3ee54
 }
 img {
     width: 150px;
@@ -192,6 +195,7 @@ a {
     }
     
 }
+<<<<<<< HEAD
 
     .container {
     max-width: 800px;
@@ -231,3 +235,6 @@ h1 {
     color: #0056b3;
 }
 
+=======
+    */
+>>>>>>> 1b20716686f41a2f06b9e39843a102b09fd3ee54
