@@ -1,0 +1,230 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>RechercheEtudiant</title>
+    <!-- Lien vers Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+        display:inline;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #f8f9fa;
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .sidebar {
+        background-color: #0d0122;
+        color: white;
+        position: absolute;
+        top: 40px; /* Hauteur de la navbar */
+        bottom: 0; /* Remplir jusqu'en bas */
+    }
+    .sidebar a {
+        color: white;
+    }
+    .sidebar a:hover {
+        background-color: #6f42c1;
+    }
+    .content {
+        flex-grow: 1;
+        padding:30px;
+        margin-left:10px; /* Largeur de la sidebar */
+        background-color: #f8f9fa; /* Couleur de fond pour le contenu */
+    
+    }
+    .navbar {
+        background-color: #5037e0f3;
+        flex-shrink: 0;
+        width:100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: --index 1000;
+    }
+    .containere{
+        text-decoration: underline;
+        
+    }
+    .lignepersonnalisée{
+        border:none;
+        height: 5px;
+        background-color: #4b17ace7;
+        
+
+    }
+    .btn{
+        text-align: center;
+    }
+    .container{
+        margin-left: 25%;
+        font-weight: bold;
+
+
+    }
+    .btn-rechercher{
+        border-radius: 20px;
+        background-color: #021af3b4;
+        border: none;
+    
+    }
+    input::placeholder{
+        font-weight: bold;
+        background-color:white;
+    }
+    .input{
+        padding: 2px;
+        font-size: 16px;
+        border-radius: 5px;
+        outline: none;
+        width: 2px;
+    }
+    .icon-link i{
+        margin-right: 20px;
+    }
+    .containerrr{
+        display: flex;
+        justify-content: flex-end;
+    }
+   
+    </style>
+</head>
+<body>
+
+    <!-- Barre de navigation verticale -->
+    <div class="content">
+        <h6 class="text-right"><strong>Année Académique:2023-2024</strong> </h6>
+        <hr class="lignepersonnalisée">
+    </div>
+    <div class="sidebar p-3">
+        <div class="contenu">
+            <h5>
+        
+      <a href="#" class="icon-link"> <i class="bi bi-house-fill float-start"></i>Accueil</a>
+            </h5>
+    </div>
+    <br>
+    <div class="contenu">
+        <h5>
+            <a href="#" class="icon-link text-primary"><i class="bi bi-mortarboard-fill"></i>Espace Etudiant</a>
+        
+        </h5>
+    </div>    
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">>Inscription</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="#">>Scolarité</a>
+            </li>
+            
+        </ul>
+        <br>
+        <div class="contenu">
+            <h5>
+               <a href="#" class="icon-link"> <i class="bi bi-person-workspace"></i>Espace Enseignant</a>
+        </h5>
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">>Evaluation</a>
+            </li>
+            <br>
+        <div class="contenu">
+                <h5>
+            
+            <a href="#" class="icon-link"><i class="bi bi-person-workspace"></i>Espace Etudiant</a>
+            </h5>
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">>Cours</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">>Emploi du temps</a>
+            </li>
+            
+        </ul>
+        <br>
+        <div class="contenu">
+            <h5>
+                
+                <a href="#" class="icon-link"><i class="bi bi-calendar2"></i>Espace Etudiant</a>
+        </h5>
+        </div>
+        <br>
+        <div class="contenu">
+            <h5>
+                
+                <a href="#" class="icon-link"><i class="bi bi-folder2-open"></i>Espace Etudiant</a>
+        </h5>
+    </div>
+    </div>
+        
+    </div>    
+    </div>
+
+    <!-- Contenu principal -->
+    <div class="content">
+       
+        <!-- Barre de titre -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand text-white" href="#" style="font-weight: bold;">ENSITECH</a>
+            <div class="containerrr text-white">
+                <i class="bi bi-person-circle">Jean Ndiaye</i>
+                
+            </div>
+            
+        </nav>
+        
+        </div>
+
+        <!-- Formulaire -->
+         
+        <div class="container mt-4 mx-20">
+            <div class="containere">
+            <h2>Rechercher un étudiant</h2>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Matricule</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="17Tesch0103">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Nom</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Nana Nana">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInput1">Date de naissance</label>
+                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="12/06/1999">
+                        
+                </div>
+                <div class="d-flex justify-content-center">
+                <button type="submit" class="btn-rechercher text-white btn-lg btn-primary">Rechercher</button>
+                </div>
+            </form>
+        </div>
+         
+    </div>
+
+    <!-- Lien vers Bootstrap JS et jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
