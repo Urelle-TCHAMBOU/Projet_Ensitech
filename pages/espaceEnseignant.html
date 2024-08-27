@@ -165,7 +165,7 @@
                             <h3 class="section-title-text">LISTE DES COURS:</h3>
                         </div>
                     </div>
-                    <button class="btn btn-add-lesson">Ajouter leçon</button>
+                    <button class="btn btn-add-lesson" data-bs-toggle="modal" data-bs-target="#addLessonModal">Ajouter leçon</button>
                 </div>
             
                 <div class="d-flex justify-content-center mt-4">
@@ -225,7 +225,7 @@
                             <h3 class="section-title-text">LISTE DES EVALUATIONS:</h3>
                         </div>
                     </div>
-                    <button class="btn btn-add-lesson">Ajouter évaluation</button>
+                    <button class="btn btn-add-lesson" data-bs-toggle="modal" data-bs-target="#addEvaluationModal">Ajouter évaluation</button>
                 </div>
 
                 <div class="d-flex flex-wrap justify-content-center mt-4">
@@ -294,6 +294,65 @@
                 </div>
                     
             </div>
+
+            <!-- Modal for adding lesson -->
+            <div class="modal fade" id="addLessonModal" tabindex="-1" aria-labelledby="addLessonModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addLessonModalLabel">Ajouter une leçon</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Form content goes here -->
+                            <form>
+                                <div class="mb-3">
+                                    <label for="lessonTitle" class="form-label">Titre de la leçon</label>
+                                    <input type="text" class="form-control" id="lessonTitle">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="lessonDescription" class="form-label">Description</label>
+                                    <textarea class="form-control" id="lessonDescription"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                            <button type="button" class="btn btn-primary">Enregistrer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal for adding evaluation -->
+            <div class="modal fade" id="addEvaluationModal" tabindex="-1" aria-labelledby="addEvaluationModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addEvaluationModalLabel">Ajouter une évaluation</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Form content goes here -->
+                            <form>
+                                <div class="mb-3">
+                                    <label for="evaluationTitle" class="form-label">Titre de l'évaluation</label>
+                                    <input type="text" class="form-control" id="evaluationTitle">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="evaluationDescription" class="form-label">Description</label>
+                                    <textarea class="form-control" id="evaluationDescription"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                            <button type="button" class="btn btn-primary">Enregistrer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!--main-content-close-->
 
             <!---footer-->
