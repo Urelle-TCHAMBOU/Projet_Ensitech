@@ -11,7 +11,7 @@ Dossier collaboratif pour la mise en production (front end) du projet Ensitech
 
 [Yvon MENSAH](https://github.com/Yvon-30)
 
-[Nsengimana François](https://github.com/IMANA47)
+[Nsengimana François ## 🇷🇼 ](https://github.com/IMANA47)
 
 [Urelle-TCHAMBOU](https://github.com/Urelle-TCHAMBOU)
 
