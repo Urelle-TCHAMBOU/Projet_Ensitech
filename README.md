@@ -21,3 +21,14 @@ Dossier collaboratif pour la mise en production (front end) du projet Ensitech
 
 [Patricia Ngounou 🇨🇲](https://github.com/ngounou-tp)
 
+## Les Technologies Utilisées pour le projet :
+[UML](https://www.uml.org/) pour la modélisation du système 
+
+la méthode agile, [Scrum](https://www.scrum.org/resources/scrum-guide) et [logiciel Jira](https://gnioo.atlassian.net/jira/software/projects/EN/boards/4/backlog) pour la gestion du projet nous les avons utilisé pendant tout le processus du projet.
+
+Pour la partie front-end :
+
+nous avons choisi le HTML, CSS JavaScript et Bootstrap 
+
+
+
