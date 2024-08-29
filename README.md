@@ -26,9 +26,15 @@ Dossier collaboratif pour la mise en production (front end) du projet Ensitech
 
 la méthode agile, [Scrum](https://www.scrum.org/resources/scrum-guide) et [logiciel Jira](https://gnioo.atlassian.net/jira/software/projects/EN/boards/4/backlog) pour la gestion du projet nous les avons utilisé pendant tout le processus du projet.
 
-Pour la partie front-end :
+### Pour la partie Front-End :
 
-nous avons choisi le HTML, CSS JavaScript et Bootstrap 
+Nous avons choisi le HTML, CSS JavaScript et Bootstrap 
 
+## Live Demo :
+Le de charge [ici]()
+
+PowerPoint pour la présentation du projet [ici]()
+
+Front-end de l'application [ici]()
 
 
